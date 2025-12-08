@@ -40,5 +40,5 @@ try:
 
 except sqlite3.OperationalError as e:
     print(f"sql error {e}")
-    
 conn.close()
+

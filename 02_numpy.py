@@ -29,5 +29,5 @@ if __name__ == "__main__":
     N = 10_000_000
     print(f"race starting with {N} elements")
     python_list_method(N)
-    numpy_array_method(N)
+    numpy_array_method()
     
