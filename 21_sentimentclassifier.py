@@ -65,12 +65,12 @@ for epoch in range(100):
         
         
 print("Test time")
-test_sen = "terrible movie"
+test_sen = "this movie is not bad"
 
 with torch.no_grad():
     inputs = make_bow_vector(test_sen,word_to_idx)
     prob = model(inputs).item()
     print(f"Sentence:{test_sen}")
     print(f"probability of positive: {prob:.4f}")
-    print(f"Sentiment:{'POSITIVE' if prob> 0.5 else 'NEGATIVE'}")
+    print(f"Sentiment:{'POSITIVE' if prob > 0.5 else 'NEGATIVE'}")
     
