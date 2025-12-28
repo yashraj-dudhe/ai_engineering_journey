@@ -4,6 +4,7 @@ import math
 
 def manual_attention_drill():
     print("The setup 3 words-------")
+    #3 words: "Bank", "Money", "River"
     
     Q = torch.tensor([[[1.0,0.0,1.0,0.0],
                        [0.0,1.0,0.0,1.0],
