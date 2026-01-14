@@ -17,8 +17,9 @@ RUN pip install --default-timeout=1000 --no-cache-dir -r requirements.txt --extr
 # 4. COPY CODE
 COPY 30_sentimentapi.py .
 
-# 5. OPEN PORT
-EXPOSE 8000
+# 5. OPEN PORT (Hugging Face default)
+EXPOSE 7860
 
 # 6. START COMMAND
-CMD ["uvicorn", "30_sentimentapi:app", "--host", "0.0.0.0", "--port", "8000"]
+# We change the port to 7860
+CMD ["uvicorn", "30_sentimentapi:app", "--host", "0.0.0.0", "--port", "7860"]

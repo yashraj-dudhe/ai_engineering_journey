@@ -11,7 +11,6 @@ print("Model Loaded")
 class SentimentRequest(BaseModel):
     text: str
     
-    
 @app.post("/predict")
 def predict_sentiment(request: SentimentRequest):
     try:
