@@ -75,9 +75,14 @@ The repository includes a Dockerfile for containerizing the sentiment analysis A
 # Build the Docker image
 docker build -t sentiment-api .
 
-# Run the container
+# Run the container (exposes on port 7860 for Hugging Face Spaces compatibility)
 docker run -p 7860:7860 sentiment-api
+
+# Or map to port 8000 for local development consistency
+docker run -p 8000:7860 sentiment-api
 ```
+
+**Note:** The Dockerfile uses port 7860 (Hugging Face Spaces default), but you can map it to any host port. The local Python script (30_sentimentapi.py) uses port 8000.
 
 ## 🛠️ Installation
 

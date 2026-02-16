@@ -349,6 +349,4 @@ The skills from files 29-30 apply to **any** ML model, making your entire journe
 
 ---
 
-**Repository:** [yashraj-dudhe/ai_engineering_journey](https://github.com/yashraj-dudhe/ai_engineering_journey)
-
 **Files:** 29_fastapi.py, 30_sentimentapi.py
