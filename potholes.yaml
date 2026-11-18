@@ -1,0 +1,9 @@
+
+path: C:\Users\Yashraj\ai_engineering_journey\pothole_dataset
+train: images/train 
+val: images/val
+
+
+#classes
+names:
+    0: pothole
